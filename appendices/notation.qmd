@@ -1,0 +1,3 @@
+# Notation {#sec-notation}
+
+Appendix placeholder for collection of notation used throughout the book

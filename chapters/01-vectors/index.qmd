@@ -1,0 +1,3 @@
+# Vectors {#sec-vectors}
+
+{{< include _01-intro.qmd >}}

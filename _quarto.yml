@@ -1,0 +1,159 @@
+project:
+  type: book
+  title: "Applied Math Done Right: Linear Algebra Foundations"
+  output-dir: _book
+  execute-dir: project
+  preview:
+    port: 4200
+    browser: false
+    watch-inputs: true
+    navigate: true
+
+book:
+  title: "Applied Math Done Right"
+  subtitle: "Linear Algebra Foundations"
+  author: "Tyler"
+  date: today
+  date-format: "MMMM D, YYYY"
+  description: "An applied linear algebra book that develops mathematical concepts alongside a usable C++ linear algebra library."
+  output-file: "applied-math-done-right-linear-algebra-foundations"
+
+  page-navigation: true
+  back-to-top-navigation: true
+  bread-crumbs: true
+  reader-mode: true
+
+  search:
+    location: sidebar
+    type: textbox
+    limit: 20
+    copy-button: true
+    keyboard-shortcut: ["?"]
+
+  downloads: [pdf, epub]
+
+  chapters:
+    - index.qmd
+    - part: "Foundations"
+      chapters:
+        - chapters/01-vectors/index.qmd
+    - references.qmd
+
+  appendices:
+    - appendices/notation.qmd
+    - appendices/cpp-library-reference.qmd
+
+  page-footer:
+    left: "Applied Math Done Right: Linear Algebra Foundations"
+    right:
+      - text: "License"
+        href: license.qmd
+
+bibliography: references.bib
+csl: citation-styles/american-mathematical-society-numeric.csl
+lang: en-US
+
+toc: true
+toc-depth: 3
+number-sections: true
+number-depth: 3
+
+crossref:
+  chapters: true
+  fig-title: "Figure"
+  tbl-title: "Table"
+  eq-title: "Equation"
+  lst-title: "Listing"
+  def-title: "Definition"
+  exm-title: "Example"
+  exr-title: "Exercise"
+  fig-prefix: "Figure"
+  tbl-prefix: "Table"
+  eq-prefix: "Equation"
+  lst-prefix: "Listing"
+  def-prefix: "Definition"
+  exm-prefix: "Example"
+  exr-prefix: "Exercise"
+  appendix-title: "Appendix"
+  appendix-delim: ":"
+
+execute:
+  freeze: false
+  echo: true
+  warning: false
+  error: false
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    html-math-method: katex
+
+    toc: true
+    toc-depth: 3
+    toc-location: right
+    toc-title: "Contents"
+    toc-expand: 2
+
+    code-copy: true
+    code-overflow: scroll
+    code-line-numbers: true
+    code-tools: false
+    syntax-highlighting: github
+
+    fig-align: center
+    fig-cap-location: bottom
+    tbl-cap-location: top
+
+    footnotes-hover: true
+    citations-hover: true
+    crossrefs-hover: true
+    anchor-sections: true
+    smooth-scroll: true
+
+    link-external-icon: true
+    link-external-newwindow: true
+
+  pdf:
+    documentclass: scrbook
+    classoption: [numbers=noendperiod]
+    pdf-engine: lualatex
+    papersize: letter
+    fontsize: 11pt
+    linestretch: 1.05
+
+    toc: true
+    toc-depth: 3
+    lof: true
+    lot: true
+
+    number-sections: true
+    number-depth: 3
+
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    citecolor: blue
+    toccolor: black
+
+    geometry:
+      - top=1in
+      - bottom=1in
+      - left=1.15in
+      - right=1.15in
+
+    fig-cap-location: bottom
+    tbl-cap-location: top
+
+    code-line-numbers: true
+    code-overflow: wrap
+    syntax-highlighting: github
+
+    keep-tex: false
+
+  epub:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    html-math-method: mathml

@@ -1,0 +1,52 @@
+# Quarto render output
+_book/
+_site/
+.quarto/
+
+# Quarto / LaTeX intermediate output
+*_files/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+# Generated root-level LaTeX file from keep-tex: true
+/*.tex
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# C++ / CMake build output, for later
+build/
+out/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+
+# Binaries, for later
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.obj
+*.o

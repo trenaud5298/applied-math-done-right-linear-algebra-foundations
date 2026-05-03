@@ -1,0 +1,32 @@
+# Default text handling
+* text=auto
+
+# Project text files should use LF in the repository
+*.qmd text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.bib text eol=lf
+*.csl text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.tex text eol=lf
+
+# C++ source files
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.h text eol=lf
+*.cxx text eol=lf
+*.ixx text eol=lf
+CMakeLists.txt text eol=lf
+*.cmake text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.epub binary
+*.zip binary

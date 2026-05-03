@@ -1,0 +1,3 @@
+# C++ Library Reference {#sec-cpp-library-reference}
+
+Appendix placeholder for C++ library API documentation

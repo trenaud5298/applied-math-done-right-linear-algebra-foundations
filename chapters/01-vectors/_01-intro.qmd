@@ -1,0 +1,8 @@
+## Vector Intro {#sec-vector-intro}
+
+This is just a test for vector intro
+
+$$
+[1,2,3] + [3,4,5] = [4,6,8]   
+$$
+
